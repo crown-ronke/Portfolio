@@ -319,7 +319,6 @@ header .social-links a img:hover{
     text-align: center;
     padding: 2rem;
     margin: 2rem;
-
 }
 
 .about .row .counter .box span{
@@ -345,20 +344,153 @@ header .social-links a img:hover{
     padding: 0 .5rem;
 }
 
-
-
-
-.#skills{
-    position: relative;
-}
-#footer{
-    position: fixed;
-    color: white;
-    padding: 15px;
-    bottom: 0;
-    z-index: 9999;
+.about .row h2{
+    color: gray;
     font-size: 15px;
+    font-family: cursive;
+    margin-left: 70px;
+    align-items: center;
+  
 }
+
+@media (max-width:760px){
+    .about .row{
+        margin-left: 5px;
+        justify-content: center;
+    }
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 80px;
+
+}
+
+.skills .row{
+    display: flex;
+    margin-left: 350px;
+}
+
+.skills .row .box{
+    display: flex;
+    flex-direction:column;
+    width: 150px;
+    height: 200px;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.box img{
+    width: 90px;
+    height: 90px;
+     
+}
+
+.skills .box {
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.skills .box h4{
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.skills .row .box:hover{
+    color: yellow;
+    background-color: black;
+}
+
+.skills .row:hover{
+    color: white;
+}
+
+@media (max-width:768px){
+    
+    .skills .row {
+        margin-left: 100px;
+        flex-direction: column;
+         
+    }
+    .skills .row .box{
+        width: 300px;
+        height:300px ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 350px;
+    
+}
+.services .row{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.services .row .box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 600px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services .box{
+    align-items: center;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+
+.services .box:hover{
+    background-color: white;
+}
+
+.services .row .box h2{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: gray;
+    justify-items: center;
+}
+
+.services .row .box p{
+    font-size: 20px;
+    align-items: center;
+    margin-top: 20px;
+    font-family: cursive;
+
+   
+}
+
+@media (max-width:768px){
+    .services .row{
+        margin-left: -250px;
+        flex-direction: column;
+    }
+    .services .heading{
+        margin-left: -200px;
+    }
+}
+
+
 
 .contact .row{
     display: flex;
@@ -420,4 +552,13 @@ header .social-links a img:hover{
     background-color: rgb(116, 116, 14);
     color: white;
     border-radius: 20px;
+}
+
+#footer{
+    position: fixed;
+    color: white;
+    padding: 15px;
+    bottom: 0;
+    z-index: 9999;
+    font-size: 15px;
 }
